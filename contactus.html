@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>CK's TECH</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+    <body>
+        <!--Header-->
+        <section class="header">
+                <nav>
+                    <a href="index.html"><img src="images/logo.png"</a>
+                    <div class="nav-link" id="navLink">
+                        <i class="fa fa-window-close" onclick="hideMenu()"></i>
+
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="https://ckstech1.blogspot.com">BLOG</a></li>
+                            <li><a href="">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showmenu()"></i>
+
+                </nav>
+        <div class="text-box">
+            <h1>Comment About Our Initiative</h1>
+           
+        </div>        
+        </section>
+        <!--End of Header-->
+<div class="comment-box">
+    <h3>Leave A Comment</h3>
+    <form class="form" action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="email" name="email"placeholder="Enter Mail">
+        <textarea rows="5" name="message"placeholder="Your Comment"></textarea>
+        <button type="submit" class="hero-btn-3">Post Comment</button>
+    </form>
+</div>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>CK's Tech is a YouTube Channel created on 2nd July of 2020, while the first video was uploaded on 10th July 2020. <br>The YouTube channel is created and maintained by two friends CHARANRAJ & KANISH.</p>
+    <div class="icons">
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-telegram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i>
+        by CR_13 for CK's TECH</p>
+</section>
+<!--Javascript-->
+<script>
+    var navLink = document.getElementById("navLink");
+
+    function showmenu(){
+        navLink.style.right = "0"; 
+    }
+    function hidemenu(){
+        navLink.style.right = "-200px"; 
+    }
+</script>
+<!--End of Javascript-->
+    </body>
+</html>
